@@ -1,3 +1,14 @@
+
+# Command Lines
+
+
+```sh
+time timemachine "$sourcepath" "$user"@"$ip":"$targetpath" -- --progress --include-from='./rsync-include.txt' --exclude='*' --bwlimit=300
+```
+
+
+
+
 # Linux Time Machine
 
 **[Install](#tada-install)** |
