@@ -281,7 +281,8 @@ shift 2
 [ "${#}" -ge 1 ] && [ "${1}" = "--" ] && shift
 
 # Name of the backup directory
-BACKUP="$( date '+%Y-%m-%d__%H-%M-%S' )"
+BACKUP="$( date '+%Y-%m-%d-%Hh%Mm%Ss' )"
+# BACKUP="$( date '+%Y-%m-%d__%H-%M-%S' )"
 
 # Name of the backup directory which is currently in progress (incomplete)
 # Used for atomic backups
