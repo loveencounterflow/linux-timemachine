@@ -1,0 +1,30 @@
+# comment
+
+.fonts/***
+bin/***
+contacts/***
+Documents/***
+Downloads/***
+dwhelper/***
+io/***
+jzr/***
+Pictures/***
+temp/***
+Videos/***
+websites/***
+
+# backup_self "$HOME/.config/sublime-text-3"
+# backup_self "$HOME/.gitconfig"
+# backup_self "$HOME/.npmrc"
+# backup_self "$HOME/.profile"
+# backup_self "$HOME/.pspg_history"
+# backup_self "$HOME/.pspgconf"
+# backup_self "$HOME/.psql_history"
+# backup_self "$HOME/.psqlrc"
+# backup_self "$HOME/.Xmodmap"
+# backup_self "$HOME/.zsh_history"
+# backup_self "$HOME/.zshrc"
+# backup_self "$HOME/.zshrc.zwc"
+# backup_self "$HOME/.thunderbird"
+# backup_self "$HOME/.xkb"
+# backup_self "$HOME/Music"
