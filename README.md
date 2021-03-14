@@ -1,3 +1,31 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Command Lines](#command-lines)
+- [Linux Time Machine](#linux-time-machine)
+  - [:tada: Install](#tada-install)
+  - [:no_entry_sign: Uninstall](#no_entry_sign-uninstall)
+  - [:coffee: TL;DR](#coffee-tldr)
+  - [:star: Features](#star-features)
+  - [:information_source: How does it work?](#information_source-how-does-it-work)
+    - [Directory structure](#directory-structure)
+    - [Backup strategy](#backup-strategy)
+    - [Failure handling and resume](#failure-handling-and-resume)
+  - [:recycle: Restore](#recycle-restore)
+  - [:repeat: Retention](#repeat-retention)
+  - [:lock: Reliability](#lock-reliability)
+  - [:computer: Usage](#computer-usage)
+    - [Available options](#available-options)
+    - [Use with cron](#use-with-cron)
+  - [:bulb: FAQ](#bulb-faq)
+  - [:exclamation: Disclaimer](#exclamation-disclaimer)
+  - [:octocat: Contributing](#octocat-contributing)
+  - [:page_facing_up: License](#page_facing_up-license)
+- [To Do](#to-do)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 # Command Lines
 
@@ -411,3 +439,16 @@ See **[Contributing guidelines](CONTRIBUTING.md)** to help to improve this proje
 **[MIT License](LICENSE.md)**
 
 Copyright (c) 2017 **[cytopia](https://github.com/cytopia)**
+
+
+# To Do
+
+* [ ] move from using `include-from`, `exclude-from` to using `--filter=". file"` where each line
+  starts with a `+` or `-` to specify inclusion, exclusion
+* [ ] add bash commands to simplify usage?
+* [ ] implement a way to test for accidentally excluded directory hierarchies (as per chapter
+  *INCLUDE/EXCLUDE PATTERN RULES* in the [rsync docs](https://download.samba.org/pub/rsync/rsync.1))
+
+
+
+
