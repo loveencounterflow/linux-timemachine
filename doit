@@ -1,0 +1,7 @@
+
+
+
+timemachine /media/flow/kamakura/home/flow/ flow@192.168.178.43:/home/flow/timemachine-backups -- --progress --include-from='./rsync-include.txt' --exclude='*'
+timemachine /home/flow/ flow@raspi:/media/flow/jupiter/temp -- --progress --include-from='/home/flow/jzr/my-backups/temp-svelte-app-includes.txt' --exclude='*'
+
+timemachine /home/flow/ flow@ganymede:/media/flow/jupiter/timemachine-backups/realist -- --progress --include-from='./rsync-include.txt' --exclude='*'

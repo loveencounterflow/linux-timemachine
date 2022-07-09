@@ -11,6 +11,7 @@ jzr/***
 Pictures/***
 temp/***
 Videos/***
+Music/***
 websites/***
 
 # backup_self "$HOME/.config/sublime-text-3"
