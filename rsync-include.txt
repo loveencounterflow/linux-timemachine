@@ -7,12 +7,20 @@ Documents/***
 Downloads/***
 dwhelper/***
 io/***
+jobs/***
 jzr/***
 Pictures/***
 temp/***
 Videos/***
 Music/***
 websites/***
+.thunderbird/***
+.config/sublime-text-3-backup/***
+.config/sublime-text-4-as-installed/***
+.zsh_history
+.zshrc
+
+
 
 # backup_self "$HOME/.config/sublime-text-3"
 # backup_self "$HOME/.gitconfig"
