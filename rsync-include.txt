@@ -9,16 +9,20 @@ dwhelper/***
 io/***
 jobs/***
 jzr/***
+3rd-party-repos/***
 Pictures/***
 temp/***
 Videos/***
 Music/***
 websites/***
 .thunderbird/***
+.config
 .config/sublime-text-3-backup/***
 .config/sublime-text-4-as-installed/***
+.config/espanso/***
 .zsh_history
 .zshrc
+.p10k.zsh
 
 
 
