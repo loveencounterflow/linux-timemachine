@@ -22,6 +22,7 @@ websites/***
 .config/espanso/***
 .zsh_history
 .zshrc
+.sqliterc
 .p10k.zsh
 
 
