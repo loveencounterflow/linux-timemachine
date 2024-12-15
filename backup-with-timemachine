@@ -10,8 +10,17 @@ trap wait_for_key EXIT
 #-----------------------------------------------------------------------------------------------------------
 echo "helo from $0"
 
-target_path=./sample-target
-mkdir -p "$target_path"/.inprogress
+lxtm_source_path="${lxtm_source_path:-$HOME}"
+lxtm_target_path="${lxtm_target_path:-/tmp/lxtm_linux_timemachine_backups}"
+lxtm_include_path="${lxtm_include_path:-.}/rsync-include.txt"
+# add slash where missing, thx to https://gist.github.com/luciomartinez/c322327605d40f86ee0c?permalink_comment_id=2647861#gistcomment-2647861
+lxtm_source_path="${lxtm_source_path%/}/"
 
-time timemachine ./sample-source ./sample-target -- --progress --include-from='./linux-timemachine/rsync-include.txt' --exclude='*'
+mkdir -p "$lxtm_target_path"/.inprogress
+
+echo "lxtm_source_path:   $lxtm_source_path"
+echo "lxtm_target_path:   $lxtm_target_path"
+echo "lxtm_include_path:  $(realpath $lxtm_include_path)"
+#
+# time timemachine "$lxtm_source_path" ./sample-target -- --progress --include-from='./linux-timemachine/rsync-include.txt' --exclude='*'
 
