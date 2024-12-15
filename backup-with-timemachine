@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+#-----------------------------------------------------------------------------------------------------------
+function wait_for_key() {
+  read -p "Press any key to continue... " -n1 -s
+  }
+trap wait_for_key EXIT
+
+#-----------------------------------------------------------------------------------------------------------
+echo "helo from $0"
+
+target_path=./sample-target
+mkdir -p "$target_path"/.inprogress
+
+time timemachine ./sample-source ./sample-target -- --progress --include-from='./linux-timemachine/rsync-include.txt' --exclude='*'
+
